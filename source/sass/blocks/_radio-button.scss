@@ -1,8 +1,8 @@
-.checkbox {
+.radio-button {
   display: block;
 
   &:hover {
-    .checkbox__label {
+    .radio-button__label {
       &::before {
         border-color: $font-color;
       }
@@ -10,7 +10,7 @@
   }
 
   &:active {
-    .checkbox__label {
+    .radio-button__label {
       &::before {
         border-color: $main-color;
       }
@@ -18,12 +18,12 @@
   }
 }
 
-.checkbox__input {
+.radio-button__input {
   position: fixed;
   transform: scale(0);
 
   &:checked {
-    ~ .checkbox__label {
+    ~ .radio-button__label {
       &::after {
         opacity: 1;
       }
@@ -31,7 +31,7 @@
   }
 }
 
-.checkbox__label {
+.radio-button__label {
   position: relative;
   display: inline-block;
   min-height: 36px;
@@ -44,27 +44,29 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     display: block;
-    width: 36px;
-    height: 36px;
     transition-duration: 0.2s;
     transition-property: border-color, opacity;
   }
 
   &::before {
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
     border: 2px solid;
     border-color: $border-color;
-    border-radius: 2px;
+    border-radius: 50%;
     background-color: $white;
   }
 
   &::after {
-    background-image: url("../img/tick.svg");
-    background-repeat: no-repeat;
-    background-size: 22px 16px;
-    background-position: center;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $main-color;
     opacity: 0;
   }
 }
