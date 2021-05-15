@@ -1,0 +1,106 @@
+.logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+  text-decoration: none;
+
+  &:hover {
+    .logo__letters {
+      fill: $main-color;
+    }
+  }
+
+  &:active {
+    .logo__letters {
+      fill: rgba($white, 0.3);
+    }
+  }
+}
+
+.logo__letters {
+  display: block;
+  width: 74px;
+  height: 23px;
+  fill: $white;
+}
+
+.logo__icon,
+.logo__stars {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    width: 145px;
+    height: 40px;
+
+    &:hover {
+      .logo__icon {
+        fill: $main-color;
+      }
+    }
+
+    &:active {
+      .logo__icon {
+        fill: rgba($white, 0.3);
+      }
+    }
+  }
+
+  .logo__icon {
+    margin-right: 11px;
+    fill: $white;
+
+    &--tablet {
+      display: block;
+      width: 59px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .logo {
+    position: relative;
+    width: 147px;
+    height: 40px;
+
+    &:active {
+      .logo__stars {
+        fill: rgba($main-color, 0.3);
+      }
+    }
+  }
+
+  .logo__letters,
+  .logo__icon,
+  .logo__stars {
+    transition-duration: 0.2s;
+    transition-property: fill;
+  }
+
+  .logo__icon {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      width: 61px;
+      height: 40px;
+    }
+  }
+
+  .logo__stars {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    z-index: 1;
+    display: block;
+    width: 94px;
+    height: 31px;
+    fill: $main-color;
+  }
+}
