@@ -1,4 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
 body {
+  min-width: 320px;
   background: $white;
   font-family: $main-font;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  color: $font-color;
+  overflow-x: hidden;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+a {
+  color: $main-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:active {
+    color: $main-color;
+    text-decoration: none;
+  }
 }
