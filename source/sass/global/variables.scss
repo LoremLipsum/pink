@@ -16,8 +16,11 @@ $disabled: #e5e5e5;
 
 $tablet: 660px;
 $desktop: 1200px;
-$pads: 20px;
 
-@media screen and (min-width: $desktop) {
-  $pads: 130px;
+:root {
+  --pads: 20px;
+
+  @media screen and (min-width: $desktop) {
+    --pads: 130px;
+  }
 }
