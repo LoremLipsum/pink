@@ -1,0 +1,52 @@
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    .burger__icon {
+      fill: $main-color;
+    }
+  }
+
+  &:active {
+    .burger__icon {
+      opacity: 0.3;
+    }
+  }
+
+  &.is-open {
+    .burger__icon {
+      &--open {
+        display: none;
+      }
+
+      &--close {
+        display: block;
+      }
+    }
+  }
+}
+
+.burger__icon {
+  display: block;
+  fill: $white;
+  transition-duration: 0.2s;
+  transition-property: fill;
+
+  &--open {
+    width: 50px;
+    height: 24px;
+  }
+
+  &--close {
+    display: none;
+    width: 23px;
+    height: 23px;
+  }
+}
