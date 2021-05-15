@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: $sub-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+
+  &:hover {
+    background-color: $sub-color-hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $disabled;
+  }
+}
