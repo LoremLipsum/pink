@@ -1,0 +1,52 @@
+.text-field {
+  display: block;
+}
+
+.text-field__label {
+  display: block;
+  padding: 0 0 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid;
+  border-color: $border-color;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $font-color;
+  transition-duration: 0.2s;
+  transition-property: border-color;
+
+  &::placeholder {
+    color: $font-color;
+  }
+
+  &:hover {
+    border-color: $font-color;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $main-color;
+  }
+
+  &:disabled {
+    border-color: $disabled;
+    background-color: $disabled;
+    color: $white;
+  }
+}
+
+textarea.text-field__input {
+  min-height: 197px;
+  resize: vertical;
+}
