@@ -1,0 +1,121 @@
+.intro {
+  margin-top: -70px;
+}
+
+.intro__top {
+  position: relative;
+  min-height: 462px;
+  padding: 90px var(--pads) 124px;
+  background-color: $dark-color;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/intro_mob.jpg");
+}
+
+.intro__slogan {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: $white;
+  text-align: center;
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.intro__image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 320px;
+  height: 286px;
+}
+
+@media screen and (min-width: $tablet) {
+  .intro {
+    margin-top: -110px;
+    background-color: $dark-color;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/intro_tab.jpg");
+  }
+
+  .intro__inner {
+    position: relative;
+    min-height: 730px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 210px var(--pads) 110px;
+  }
+
+  .intro__top {
+    position: static;
+    width: 300px;
+    min-height: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    background: none;
+  }
+
+  .intro__slogan {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .intro__image {
+    width: 660px;
+    height: 545px;
+  }
+
+  .intro__applications {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .intro {
+    background-image: url("../img/intro_desk.jpg");
+  }
+
+  .intro__inner {
+    width: $desktop;
+    max-width: none;
+    min-height: 853px;
+    padding: 210px var(--pads) 170px;
+  }
+
+  .intro__image {
+    left: 140px;
+    transform: none;
+    width: 1050px;
+    height: 645px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .intro__top {
+    background-image: url("../img/intro_mob@2x.jpg");
+  }
+
+  @media screen and (min-width: $tablet) {
+    .intro {
+      background-image: url("../img/intro_tab@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .intro {
+      background-image: url("../img/intro_desk@2x.jpg");
+    }
+  }
+}

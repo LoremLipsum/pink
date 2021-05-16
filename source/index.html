@@ -63,12 +63,18 @@
       <div class="intro__inner">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="intro__top">
-          <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-          <img src="./img/pink.png" alt="" class="ingro__image">
+          <div class="intro__slogan">
+            <p>Взгляните на жизнь иначе!</p>
+          </div>
+          <picture>
+            <source srcset="./img/hend_with_phone_desk.png 1x, ./img/hend_with_phone_desk.png 2x" media="(min-width: 1200px)">
+            <source srcset="./img/hend_with_phone_tab.png 1x, ./img/hend_with_phone_tab.png 2x" media="(min-width: 660px)">
+            <img class="intro__image" src="./img/hend_with_phone_mob.png" srcset="./img/hend_with_phone_mob.png 2x" alt="Приложение Pink">
+          </picture>
         </div>
-        <div class="intro__applications">
+        <div class="intro__applications applications">
           <button class="intro__button button-round button-round--white" type="button">Скачать приложение</button>
-          <ul class="intro__list applications">
+          <ul class="applications__list">
             <li class="applications__item">
               <a href="" class="applications__link">
                 <span class="visually-hidden">Apple</span>
