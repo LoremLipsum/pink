@@ -64,34 +64,37 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="intro__top">
           <div class="intro__slogan">
-            <p>Взгляните на жизнь иначе!</p>
+            <p>Взгляните на жизнь <br>иначе!</p>
           </div>
           <picture>
-            <source srcset="./img/hend_with_phone_desk.png 1x, ./img/hend_with_phone_desk.png 2x" media="(min-width: 1200px)">
+            <source srcset="./img/hend_with_phone_desk.png 1x, ./img/hend_with_phone_desk.png 2x" media="(min-width: 1020px)">
             <source srcset="./img/hend_with_phone_tab.png 1x, ./img/hend_with_phone_tab.png 2x" media="(min-width: 660px)">
             <img class="intro__image" src="./img/hend_with_phone_mob.png" srcset="./img/hend_with_phone_mob.png 2x" alt="Приложение Pink">
           </picture>
         </div>
-        <div class="intro__applications applications">
-          <button class="intro__button button-round button-round--white" type="button">Скачать приложение</button>
-          <ul class="applications__list">
-            <li class="applications__item">
-              <a href="" class="applications__link">
-                <span class="visually-hidden">Apple</span>
+        <div class="intro__download download">
+          <button class="download__button button-round button-round--white" type="button">Скачать приложение</button>
+          <ul class="download__list">
+            <li class="download__item download__item--apple">
+              <a href="" class="download__link">
+                <span class="visually-hidden">Скачать приложение для Apple</span>
+                <img class="download__image" src="./img/apple-logo.svg" width="47" height="56" alt="Apple logo">
               </a>
             </li>
-            <li class="applications__item">
-              <a href="" class="applications__link">
-                <span class="visually-hidden">Android</span>
+            <li class="download__item download__item--android">
+              <a href="" class="download__link">
+                <span class="visually-hidden">Скачать приложение для Android</span>
+                <img class="download__image" src="./img/android-logo.svg" width="43" height="47" alt="Android лого">
               </a>
             </li>
-            <li class="applications__item">
-              <a href="" class="applications__link">
-                <span class="visually-hidden">Windows</span>
+            <li class="download__item download__item--microsoft">
+              <a href="" class="download__link">
+                <span class="visually-hidden">Скачать приложение для Windows</span>
+                <img class="download__image" src="./img/microsoft-logo.svg" width="44" height="41" alt="Microsoft лого">
               </a>
             </li>
           </ul>
-          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="download__text">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</div>
         </div>
       </div>
     </section>

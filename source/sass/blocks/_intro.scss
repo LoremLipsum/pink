@@ -52,14 +52,14 @@
     min-height: 730px;
     max-width: 980px;
     margin: 0 auto;
-    padding: 210px var(--pads) 110px;
+    padding: 210px var(--pads) 100px;
   }
 
   .intro__top {
     position: static;
     width: 300px;
     min-height: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 0;
     background: none;
   }
@@ -76,7 +76,7 @@
     height: 545px;
   }
 
-  .intro__applications {
+  .intro__download {
     position: relative;
     z-index: 1;
   }
@@ -91,7 +91,16 @@
     width: $desktop;
     max-width: none;
     min-height: 853px;
-    padding: 210px var(--pads) 170px;
+    padding-top: 215px;
+  }
+
+  .intro__top {
+    margin-bottom: 30px;
+  }
+
+  .intro__slogan {
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .intro__image {
