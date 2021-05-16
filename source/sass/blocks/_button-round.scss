@@ -13,7 +13,7 @@
   text-transform: capitalize;
   text-align: center;
   transition-duration: 0.2s;
-  transition-property: background-color, color;
+  transition-property: background, color;
 
   &:hover {
     background-color: $main-color;
@@ -21,6 +21,7 @@
   }
 
   &:active {
+    background-color: $main-color;
     color: rgba($white, 0.3);
   }
 
@@ -41,6 +42,7 @@
     }
 
     &:active {
+      background-color: $white;
       color: rgba($main-color, 0.3);
     }
   }
