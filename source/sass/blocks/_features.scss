@@ -114,7 +114,7 @@
   .features__inner {
     width: $desktop;
     margin: 0 auto;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     padding-left: var(--pads);
     background: none;
 
@@ -133,6 +133,7 @@
 
   .features__item {
     position: relative;
+    margin-bottom: 0;
     padding: 355px 20px 0;
 
     &::before,

@@ -4,7 +4,7 @@ body {
   background: $white;
   font-family: $main-font;
   font-size: 14px;
-  line-height: 2;
+  line-height: 24px;
   font-weight: 400;
   color: $font-color;
   text-size-adjust: 100%;
@@ -37,5 +37,12 @@ a {
   &:active {
     color: $main-color;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
