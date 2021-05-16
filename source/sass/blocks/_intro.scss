@@ -9,7 +9,7 @@
   background-color: $dark-color;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/intro_mob.jpg");
+  background-image: url("../img/intro/intro-mob.jpg");
 }
 
 .intro__slogan {
@@ -44,7 +44,7 @@
     background-color: $dark-color;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/intro_tab.jpg");
+    background-image: url("../img/intro/intro-tab.jpg");
   }
 
   .intro__inner {
@@ -84,7 +84,7 @@
 
 @media screen and (min-width: $desktop) {
   .intro {
-    background-image: url("../img/intro_desk.jpg");
+    background-image: url("../img/intro/intro-desk.jpg");
   }
 
   .intro__inner {
@@ -113,18 +113,18 @@
 
 @media (min-resolution: 2dppx) {
   .intro__top {
-    background-image: url("../img/intro_mob@2x.jpg");
+    background-image: url("../img/intro/intro-mob@2x.jpg");
   }
 
   @media screen and (min-width: $tablet) {
     .intro {
-      background-image: url("../img/intro_tab@2x.jpg");
+      background-image: url("../img/intro/intro-tab@2x.jpg");
     }
   }
 
   @media screen and (min-width: $desktop) {
     .intro {
-      background-image: url("../img/intro_desk@2x.jpg");
+      background-image: url("../img/intro/intro-desk@2x.jpg");
     }
   }
 }

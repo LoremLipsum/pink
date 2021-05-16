@@ -1,0 +1,246 @@
+.features {
+  position: relative;
+  margin-top: 40px;
+  background-color: $light-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10vw;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10vw;
+    background-image: linear-gradient(175deg, transparent 10vw, $light-color calc(10vw + 1px));
+  }
+}
+
+.features__inner {
+  position: relative;
+  padding: 45px var(--pads) 310px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 158px;
+    height: 277px;
+    background-image: url("../img/features/phone-mob.png");
+    background-size: 158px 277px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  max-width: 400px;
+  margin: 0 auto 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .features {
+    margin-top: 54px;
+  }
+
+  .features__inner {
+    min-height: 432px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 330px;
+
+    &::after {
+      bottom: 0;
+      left: 20px;
+      transform: none;
+      width: 268px;
+      height: 482px;
+      background-image: url("../img/features/phone-tab.png");
+      background-size: 268px 482px;
+    }
+  }
+
+  .features__item {
+    max-width: 400px;
+    margin: 0 0 35px;
+  }
+
+  .features__title {
+    text-align: left;
+  }
+
+  .features__text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .features {
+    margin-top: calc(5vw + 58px);
+  }
+
+  .features__inner {
+    width: $desktop;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    padding-left: var(--pads);
+    background: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-top: calc(-5vw - 58px);
+  }
+
+  .features__item {
+    position: relative;
+    padding: 355px 20px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+
+    &::before {
+      top: 282px;
+      left: 0;
+      height: 20px;
+      background-size: 100% 12px;
+      background-image: url("../img/features/shadow.png");
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+      height: 301px;
+      background-size: 186px 301px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      &::after {
+        background-image: url("../img/features/phone-1.png");
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        background-image: url("../img/features/phone-2.png");
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        background-image: url("../img/features/phone-3.png");
+      }
+    }
+  }
+
+  .features__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .features__inner {
+    &::after {
+      background-image: url("../img/features/phone-mob@2x.png");
+      background-size: 158px 277px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    .features__inner {
+      &::after {
+        background-image: url("../img/features/phone-tab@2x.png");
+        background-size: 268px 482px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .features__item {
+      &::before {
+        background-image: url("../img/features/shadow@2x.png");
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(1) {
+        &::after {
+          background-image: url("../img/features/phone-1@2x.png");
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          background-image: url("../img/features/phone-2@2x.png");
+        }
+      }
+
+      &:nth-child(3) {
+        &::after {
+          background-image: url("../img/features/phone-3@2x.png");
+        }
+      }
+    }
+  }
+}
