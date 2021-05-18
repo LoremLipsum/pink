@@ -1,0 +1,31 @@
+.slider-dots {
+  font-size: 0;
+  text-align: center;
+}
+
+.slider-dots__item {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $border-color;
+    box-sizing: content-box;
+  }
+
+  &.is-active {
+    &::before {
+      background-color: $white;
+      border: 3px solid $font-color;
+    }
+  }
+}

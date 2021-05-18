@@ -1,0 +1,53 @@
+.reviews {
+  padding: 40px 0 30px;
+}
+
+.reviews__inner {
+  padding: 0 var(--pads);
+}
+
+.reviews__item {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}
+
+.revews__dots {
+  margin-top: 20px;
+}
+
+.reviews__button {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
+  .reviews__inner {
+    width: $desktop;
+    margin: 0 auto;
+  }
+
+  .reviews__list {
+    position: relative;
+    padding: 0 100px;
+  }
+
+  .reviews__button {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
