@@ -1,5 +1,5 @@
 body {
-  min-width: 320px;
+  min-width: var(--min-width);
   margin: 0;
   background: $white;
   font-family: $main-font;

@@ -27,7 +27,7 @@
 
 @media screen and (min-width: $desktop) {
   .reviews__inner {
-    width: $desktop;
+    width: var(--desktop);
     margin: 0 auto;
   }
 

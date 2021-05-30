@@ -194,45 +194,101 @@
     <section class="price">
       <div class="price__inner">
         <h2 class="visually-hidden">Цены</h2>
-        <table class="price__table">
+        <table class="price__table price-table">
           <thead>
-            <tr class="price__row">
-              <th class="price__head-cell"></th>
-              <th class="price__head-cell">
-                <span class="price__title">База</span>
-                <span class="price__value">1,99 USD</span>
+            <tr class="price-table__head-row">
+              <th class="price-table__head"></th>
+              <th class="price-table__head" scope="col">
+                <span class="price-table__tariff">База</span>
+                <span class="price-table__value">1,99 USD</span>
               </th>
-              <th class="price__head-cell">
-                <span class="price__title">Стандарт</span>
-                <span class="price__value">3,99 USD</span>
+              <th class="price-table__head" scope="col">
+                <span class="price-table__tariff">Стандарт</span>
+                <span class="price-table__value">3,99 USD</span>
               </th>
-              <th class="price__head-cell">
-                <span class="price__title">Анлим</span>
-                <span class="price__value">9,99 USD</span>
+              <th class="price-table__head" scope="col">
+                <span class="price-table__tariff">Анлим</span>
+                <span class="price-table__value">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr class="price__row">
-              <th class="price__cell"><span class="price__name">Розовый фильтр</span></th>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
+            <tr class="price-table__row">
+              <th class="price-table__cell" scope="row">
+                <span class="price-table__feature">Розовый фильтр</span>
+              </th>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--yes">
+                  <span class="price-table__feature" hidden>Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--yes">
+                  <span class="price-table__feature" hidden>Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--yes">
+                  <span class="price-table__feature" hidden>Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
             </tr>
-            <tr class="price__row">
-              <th class="price__cell"><span class="price__name">Смайлики</span></th>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Смайлики</span><span class="visually-hidden">Нет</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Смайлики</span><span class="visually-hidden">Да</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Смайлики</span><span class="visually-hidden">Да</span></td>
+            <tr class="price-table__row">
+              <th class="price-table__cell" scope="row">
+                <span class="price-table__feature">Смайлики</span>
+              </th>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--no">
+                  <span class="price-table__feature" hidden>Смайлики</span>
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--yes">
+                  <span class="price-table__feature" hidden>Смайлики</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--yes">
+                  <span class="price-table__feature" hidden>Смайлики</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
             </tr>
-            <tr class="price__row">
-              <th class="price__cell"><span class="price__name">Комментарии</span></th>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Комментарии</span><span class="visually-hidden">Нет</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Комментарии</span><span class="visually-hidden">Нет</span></td>
-              <td class="price__cell"><span class="price__check"><span class="price__name">Комментарии</span><span class="visually-hidden">Да</span></td>
+            <tr class="price-table__row">
+              <th class="price-table__cell" scope="row">
+                <span class="price-table__feature">Комментарии</span>
+              </th>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--no">
+                  <span class="price-table__feature" hidden>Комментарии</span>
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--no">
+                  <span class="price-table__feature" hidden>Комментарии</span>
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__check price-table__check--no">
+                  <span class="price-table__feature" hidden>Комментарии</span>
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </td>
             </tr>
           </tbody>
         </table>
+        <div class="price__dots slider-dots">
+          <span class="slider-dots__item is-active"></span>
+          <span class="slider-dots__item"></span>
+          <span class="slider-dots__item"></span>
+        </div>
       </div>
     </section>
 

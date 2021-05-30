@@ -19,8 +19,11 @@ $desktop: 980px;
 
 :root {
   --pads: 20px;
+  --min-width: 320px;
+  --desktop: 980px;
 
   @media screen and (min-width: 1020px) {
+    --desktop: 1020px;
     --pads: 40px;
   }
 }

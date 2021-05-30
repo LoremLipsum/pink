@@ -112,7 +112,7 @@
   }
 
   .features__inner {
-    width: $desktop;
+    width: var(--desktop);
     margin: 0 auto;
     padding-bottom: 30px;
     padding-left: var(--pads);

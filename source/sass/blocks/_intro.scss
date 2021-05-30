@@ -88,7 +88,7 @@
   }
 
   .intro__inner {
-    width: $desktop;
+    width: var(--desktop);
     max-width: none;
     min-height: 853px;
     padding-top: 215px;
@@ -114,17 +114,24 @@
 @media (min-resolution: 2dppx) {
   .intro__top {
     background-image: url("../img/intro/intro-mob@2x.jpg");
+    background-size: cover;
   }
 
   @media screen and (min-width: $tablet) {
     .intro {
       background-image: url("../img/intro/intro-tab@2x.jpg");
+      background-size: cover;
+    }
+
+    .intro__top {
+      background-image: none;
     }
   }
 
   @media screen and (min-width: $desktop) {
     .intro {
       background-image: url("../img/intro/intro-desk@2x.jpg");
+      background-size: cover;
     }
   }
 }

@@ -1,0 +1,201 @@
+.price-table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-style: hidden;
+  width: calc(300vw - 3 * 2 * var(--pads));
+  min-width: calc(3 * var(--min-width) - 3 * 2 * var(--pads));
+}
+
+.price-table__head {
+  width: 33.33%;
+  padding: 15px 20px 25px;
+  border: none;
+  border-right: 2px solid $border-color;
+  background-color: $dark-color;
+  color: $white;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    border-radius: 5px 0 0 0;
+  }
+
+  &:last-child {
+    border-right: none;
+    border-radius: 0 5px 0 0;
+  }
+}
+
+.price-table__tariff {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price-table__value {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price-table__row {
+  &:last-child {
+    .price-table__cell {
+      &:nth-child(2) {
+        border-radius: 0 0 0 5px;
+      }
+
+      &:last-child {
+        border-radius: 0 0 5px 0;
+      }
+    }
+  }
+}
+
+.price-table__cell {
+  width: 33.33%;
+  padding: 15px 20px;
+  border-right: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  background-color: $white;
+  box-sizing: content-box;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    border-left: 2px solid $border-color;
+  }
+}
+
+.price-table__check {
+  display: block;
+  min-height: 27px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &--yes {
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23F25B26' viewBox='0 0 27 27' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.644 13.507l10.91-10.92a1.503 1.503 0 000-2.14 1.524 1.524 0 00-2.14 0l-10.909 10.92L2.586.447a1.504 1.504 0 00-2.14 0 1.524 1.524 0 000 2.14l10.92 10.92-10.92 10.91a1.503 1.503 0 000 2.139 1.514 1.514 0 002.14 0l10.919-10.91 10.909 10.91a1.514 1.514 0 002.14-2.14l-10.91-10.91z'/%3E%3C/svg%3E");
+    background-size: 27px 27px;
+  }
+
+  &--no {
+    background-image: url("data:image/svg+xml,%3Csvg fill='%233DC644' viewBox='0 0 31 21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.556.43a1.54 1.54 0 00-.499-.318 1.607 1.607 0 00-1.179 0 1.54 1.54 0 00-.499.318L10.374 17.496 2.578 10.11a1.582 1.582 0 00-1.072-.39 1.576 1.576 0 00-1.057.425c-.28.266-.442.625-.449 1.001-.007.377.14.74.411 1.016l8.88 8.412c.142.135.31.243.497.316a1.596 1.596 0 001.67-.316L30.556 2.482c.284-.274.444-.642.444-1.026S30.84.703 30.556.43z'/%3E%3C/svg%3E");
+    background-size: 31px 22px;
+  }
+}
+
+.price-table__feature {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: $tablet) {
+  .price-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .price-table__head {
+    width: 25%;
+    padding: 15px 20px 15px;
+
+    &:first-child {
+      display: table-cell;
+      background: none;
+      border: none;
+      border-bottom: 2px solid $border-color;
+      border-left: 5px solid transparent;
+    }
+  }
+
+  .price-table__row {
+    &:first-child {
+      .price-table__cell {
+        &:first-child {
+          border-radius: 5px 0 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      .price-table__cell {
+        &:first-child {
+          border-radius: 0 0 0 5px;
+        }
+
+        &:nth-child(2) {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .price-table__cell {
+    width: 25%;
+    padding: 15px 20px;
+    text-align: left;
+
+    &:first-child {
+      display: table-cell;
+      border-left: 2px solid $border-color;
+    }
+
+    &:nth-child(2) {
+      border-left: none;
+    }
+  }
+
+  .price-table__check {
+    background-position: center;
+
+    .price-table__feature {
+      display: none;
+    }
+  }
+
+  .price-table__feature {
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .price__inner {
+    width: var(--desktop);
+    margin: 0 auto;
+  }
+
+  .price-table__head {
+    padding: 15px 20px 25px;
+  }
+
+  .price-table__tariff {
+    font-size: 18px;
+  }
+
+  .price-table__value {
+    font-size: 24px;
+  }
+
+  .price-table__cell {
+    padding: 15px 20px;
+  }
+
+  .price-table__feature {
+    font-size: 18px;
+  }
+}
