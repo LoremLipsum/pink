@@ -46,6 +46,11 @@
   }
 }
 
+.contacts__map {
+  position: relative;
+  z-index: -1;
+}
+
 @media screen and (min-width: $tablet) {
   .contacts__inner {
     padding-top: 50px;
