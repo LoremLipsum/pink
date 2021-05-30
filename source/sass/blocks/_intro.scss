@@ -105,9 +105,10 @@
   }
 
   .intro__image {
-    left: 140px;
+    left: calc(100px + var(--pads));
     transform: none;
     width: 1050px;
+    max-width: none;
     height: 645px;
   }
 }
@@ -115,13 +116,13 @@
 @media (min-resolution: 2dppx) {
   .intro__top {
     background-image: url("../img/intro/intro-mob@2x.jpg");
-    background-size: cover;
+    background-size: 320px 286px;
   }
 
   @media screen and (min-width: $tablet) {
     .intro {
       background-image: url("../img/intro/intro-tab@2x.jpg");
-      background-size: cover;
+      ackground-size: 660px 545px;
     }
 
     .intro__top {
@@ -132,7 +133,7 @@
   @media screen and (min-width: $desktop) {
     .intro {
       background-image: url("../img/intro/intro-desk@2x.jpg");
-      background-size: cover;
+      background-size: 1050px 645px;
     }
   }
 }
